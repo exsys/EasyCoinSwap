@@ -11,7 +11,7 @@ app.use("/", allRoutes);
 
 // always send back the index.html since angular requires this.
 app.use((req, res) => {
-    res.sendFile(path.join(__dirname, "/frontend", "index.html"));
+    res.sendFile(path.join(__dirname, "/public", "index.html"));
 });
 
 const port = process.env.PORT || 3000;
